@@ -1,0 +1,83 @@
+.home{
+    height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerContainer{
+    width: auto;
+    margin-left: 30px;
+}
+.home .headerContainer h1{
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 80px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home .headerContainer p{
+    margin-top: 15px;
+    font-size: 40px;
+    padding: 0%;
+    font-weight: "ligher";
+    color: white;
+}
+.home .headerContainer button{
+    color: black;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    width: 180px;
+}
+.headerContainer button :hover{
+     background-color: black;
+     cursor: pointer;
+     transition: 0.3s ease-in;
+}
+
+/* mobileView @mediaquery */
+@media  only screen and (max-width:600px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer{
+        margin-left: 0;
+        border-radius: 10px;
+        height: 300px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #4a4f52;
+        color: white;
+
+    }
+    .home .headerContainer h1{
+        font-size: 40px;
+        height: 30px;
+        margin: 30px 0px;
+        color: white;
+    }
+    .home .headerContainer p{
+        font-size: 30px;
+        color: white;
+       
+    }
+    .headerContainer bottom{
+     background-color: white;
+     color: #121619;
+    margin-bottom: 30px;
+    }
+}
